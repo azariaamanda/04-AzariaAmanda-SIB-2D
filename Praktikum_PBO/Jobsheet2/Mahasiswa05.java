@@ -9,6 +9,6 @@ public class Mahasiswa05 {
         System.out.println("Nama   : " + nama);
         System.out.println("Alamat : " + alamat);
         System.out.println("Kelas  : " + kelas);
+        System.out.println("-----------------------------");
     }
-
 }
