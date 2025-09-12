@@ -10,14 +10,19 @@ public class MotorEnkapDemo04 {
         MotorEnkap04 motor2 = new MotorEnkap04();
         motor2.setPlatNomor("N 9840 AB");
         motor2.setMesinOn(true);
-        motor2.setKecepatan(40);
-        motor2.displayStatus();
+        motor2.setKecepatan(140);
         motor2.displayStatus();
 
         MotorEnkap04 motor3 = new MotorEnkap04();
         motor3.setPlatNomor("D 8343 CV");
         motor3.setKecepatan(60);
         motor3.displayStatus();
+
+        MotorEnkap04 motor4 = new MotorEnkap04();
+        motor4.setMesinOn(true);
+        motor4.setPlatNomor("B 2222 CV");
+        motor4.setKecepatan(-60);
+        motor4.displayStatus();
     }
 }
 

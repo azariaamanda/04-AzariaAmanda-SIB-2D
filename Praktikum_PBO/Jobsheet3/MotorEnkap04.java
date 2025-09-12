@@ -24,12 +24,17 @@ public class MotorEnkap04 {
         return kecepatan;
     }
 
-    public void setKecepatan(int kecepatan) {
-        if (!this.isMesinOn && kecepatan > 0) {
+    public void setKecepatan(int kecepatanBaru) {
+        if (!isMesinOn && kecepatanBaru > 0) {
             System.out.println("Kecepatan tidak boleh lebih dari 0 jika mesin off");
-        }
-        else{
-            this.kecepatan = kecepatan;
+        } else if (kecepatanBaru >= 100) {
+            System.out.println("Kecepatan maksimal 100!");
+            this.kecepatan = kecepatanBaru;
+        } else if (kecepatanBaru < 0) {
+            System.out.println("Kecepatan tidak boleh negatif!");
+            this.kecepatan = kecepatanBaru;
+        } else {
+            this.kecepatan = kecepatanBaru;
         }
     }
 
