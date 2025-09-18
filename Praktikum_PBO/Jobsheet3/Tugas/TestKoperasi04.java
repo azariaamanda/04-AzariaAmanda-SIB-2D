@@ -9,10 +9,14 @@ public class TestKoperasi04 {
         System.out.println("\nMeminjam uang 10.000.000 ... ");
         anggota1.pinjam(10000000);
         System.out.println("Jumlah pinjaman saat ini: " + anggota1.getJumlahPinjaman());
-        
+
         System.out.println("\nMeminjam uang 4.000.000 .. ");
         anggota1.pinjam(4000000);
         System.out.println("Jumlah pinjaman saat ini: " + anggota1.getJumlahPinjaman());
+
+        System.out.println("\nMembayar angsuran 200000 (kurang dari 10%)");
+        anggota1.angsur(200000);
+        System.out.println("Sisa pinjaman: " + anggota1.getJumlahPinjaman());
         
         System.out.println("\nMembayar angsuran 1.000.000");
         anggota1.angsur(1000000);

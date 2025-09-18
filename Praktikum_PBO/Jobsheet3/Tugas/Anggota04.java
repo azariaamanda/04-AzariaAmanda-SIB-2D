@@ -32,10 +32,13 @@ public class Anggota04 {
     }
 
     public void angsur(int jumlahAngsur) {
-        jumlahPinjaman -= jumlahAngsur;
-        if (jumlahPinjaman < 0) {
-            jumlahPinjaman = 0;
+        if (jumlahAngsur < (jumlahPinjaman * 0.1)) {
+            System.out.println("Maaf, angsuran harus minimal 10% dari jumlah pinjaman");
+        } else {
+            jumlahPinjaman -= jumlahAngsur;
+            if (jumlahPinjaman < 0) {
+                jumlahPinjaman = 0;
+            }
         }
     }
-
 }
