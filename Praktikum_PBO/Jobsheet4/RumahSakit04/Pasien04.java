@@ -28,7 +28,7 @@ public class Pasien04 {
         this.nama = nama;
     }
 
-    public void tamnahKonsultasi (LocalDate tanggal, Pegawai04 dokter, Pegawai04 perawat) {
+    public void tambahKonsultasi (LocalDate tanggal, Pegawai04 dokter, Pegawai04 perawat) {
         Konsultasi04 konsultasi = new Konsultasi04();
         konsultasi.setTanggal(tanggal);
         konsultasi.setDokter(dokter);
@@ -40,6 +40,19 @@ public class Pasien04 {
         String info = "";
         info+= "No Rekam Medis      : " + this.noRekamMedis + "\n";
         info+= "Nama                : " + this.nama + "\n";
+
+        if (!riwayatKonsultasi.isEmpty()) {
+            info += "Riwayat Konsultasi :\n";
+
+            for (Konsultasi04 konsultasi : riwayatKonsultasi){
+                info += konsultasi.getInfo();
+            }
+        }
+        else{
+            info += "Belum ada riwayat konsultasi";
+        }
+
+        info += "\n";
 
         return info;
     }
