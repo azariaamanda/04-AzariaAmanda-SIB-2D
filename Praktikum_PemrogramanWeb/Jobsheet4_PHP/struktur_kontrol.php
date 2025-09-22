@@ -108,4 +108,12 @@ if($hargaProduk > $batasBeli){
 
 echo "<br><br>";
 echo "Harga yang harus dibayar setelah diskon yaitu sebesar Rp. $totalBayar";
+
+//Pemain Game
+$poin = 555;
+$batas = 500;
+
+echo "<br><br>";
+echo "Total skor pemain adalah: ($poin) <br>";
+echo "Apakah pemain mendapatkan hadiah tambahan? " . ($poin > 500 ? "(YA)" : "(TIDAK)");
 ?>
