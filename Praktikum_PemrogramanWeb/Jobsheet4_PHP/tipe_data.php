@@ -25,4 +25,22 @@ echo "Bahasa Indonesia: {$nilaiBahasaIndonesia} <br>";
 echo "Rata-rata: {$rataRata} <br>";
 
 var_dump($rataRata);
+
+$apakahSiswaLulus = true;
+$apakahSiswaSudahUjian = false;
+
+var_dump($apakahSiswaLulus);
+echo "<br>";
+var_dump($apakahSiswaSudahUjian);
+
+$namaDepan = "Ibnu";
+$namaBelakang = 'Jakaria';
+
+$namaLengkap = "{$namaDepan} {$namaBelakang}";
+$namaLengkap2 = $namaDepan . ' ' . $namaBelakang;
+
+echo "Nama Depan: {$namaDepan} <br>";
+echo 'Nama Belakang: ' . $namaBelakang . '<br>';
+
+echo $namaLengkap;
 ?>
