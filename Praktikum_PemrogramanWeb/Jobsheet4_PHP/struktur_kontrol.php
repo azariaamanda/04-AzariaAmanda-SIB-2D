@@ -95,5 +95,17 @@ echo "Total nilai tanpa 2 tertinggi dan 2 terendah adalah: $totalNilai <br>";
 echo "Rata-rata nilai: $rataRata";
 
 //Pelanggan
+$hargaProduk = 120000;
+$diskon = 0.20;
+$batasBeli = 100000;
+$totalBayar = 0;
 
+if($hargaProduk > $batasBeli){
+    $totalBayar = $hargaProduk - ($hargaProduk * $diskon);
+} else {
+    $totalBayar = $hargaProduk;
+}
+
+echo "<br><br>";
+echo "Harga yang harus dibayar setelah diskon yaitu sebesar Rp. $totalBayar";
 ?>
