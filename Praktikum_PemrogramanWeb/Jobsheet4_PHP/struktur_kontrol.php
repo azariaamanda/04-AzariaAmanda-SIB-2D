@@ -57,14 +57,15 @@ foreach ($nilaiSiswa as $nilai) {
     echo "Nilai: $nilai (Lulus) <br>";
 }
 
-$nilaiSiswa = [85, 92, 78, 64, 90, 75, 88, 79, 70, 96];
+//Guru Matematika
+$nilaiMatematika = [85, 92, 78, 64, 90, 75, 88, 79, 70, 96];
 $terbesar1 = 0;
 $terbesar2 = 0;
 $terkecil1 = 100;
 $terkecil2 = 100;
 $totalNilai = 0;
 
-foreach ($nilaiSiswa as $nilai) {
+foreach ($nilaiMatematika as $nilai) {
     if ($nilai > $terbesar1) {
         $terbesar2 = $terbesar1;
         $terbesar1 = $nilai;
@@ -80,7 +81,7 @@ foreach ($nilaiSiswa as $nilai) {
     }
 }
 
-foreach ($nilaiSiswa as $nilai) {
+foreach ($nilaiMatematika as $nilai) {
     if ($nilai == $terbesar1 || $nilai == $terbesar2 || $nilai == $terkecil1 || $nilai == $terkecil2) {
         continue;
     }
@@ -90,6 +91,9 @@ foreach ($nilaiSiswa as $nilai) {
 $rataRata = $totalNilai / 6;
 
 echo "<br>";
-echo "Total nilai tanpa 2 tertinggi & 2 terendah adalah: $totalNilai <br>";
-echo "Rata-rata nilai adalah: $rataRata";
+echo "Total nilai tanpa 2 tertinggi dan 2 terendah adalah: $totalNilai <br>";
+echo "Rata-rata nilai: $rataRata";
+
+//Pelanggan
+
 ?>
