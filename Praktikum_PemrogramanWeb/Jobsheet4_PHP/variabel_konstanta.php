@@ -10,7 +10,7 @@ $salah = false;
 echo "Variabel benar: $benar, Variabel salah: $salah";
 echo "<br>";
 
-//Mendefinisikan konstanta unruk nikai tetap
+//Mendefinisikan konstanta unruk nilai tetap
 define("NAMA_SITUS", "WebsiteKu.com");
 define("TAHUN_PENDIRIAN", 2023);
 
