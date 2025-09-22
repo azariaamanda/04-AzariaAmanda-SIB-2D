@@ -34,3 +34,14 @@ echo "Hasil Lebih Besar: {$hasilLebihBesar} <br>";
 echo "Hasil Lebih Kecil Sama: {$hasilLebihKecilSama} <br>";
 echo "Hasil Lebih Besar Sama: {$hasilLebihBesarSama} <br>";
 
+$hasilAnd = $a && $b;
+$hasilOr = $a || $b;
+$hasilNotA = !$a;
+$hasilNotB = !$b;
+
+echo "<br>";
+echo "Hasil AND: {$hasilAnd} <br>";
+echo "Hasil OR: {$hasilOr} <br>";
+echo "Hasil NOT A: {$hasilNotA} <br>";
+echo "Hasil NOT B: {$hasilNotB} <br>";
+
