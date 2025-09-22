@@ -77,3 +77,4 @@ $persenKursiKosong = (45-28)/45 * 100;
 echo"Total Kursi Resto = $totalKursi<br>";
 echo"Kursi yang terisi pada suatu malam = $kursiTerisi<br>";
 echo"Persen Kursi yang masih kosong $persenKursiKosong";
+?>
