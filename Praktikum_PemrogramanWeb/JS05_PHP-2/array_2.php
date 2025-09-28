@@ -8,7 +8,6 @@
 </head>
 
 <body>
-    <hr>
     <?php
         $Dosen = [
             'nama' => 'Elok Nur Hamdana',
