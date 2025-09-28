@@ -14,11 +14,26 @@
             'domisili' => 'Malang' ,
             'jenis_kelamin' => 'Perempuan'
         ];
-        
-        echo "Nama : {$Dosen ['nama']} <br>";
-        echo "Domisili : {$Dosen ['domisili']} <br>";
-        echo "Jenis Kelamin : {$Dosen ['jenis_kelamin']} <br>";
-
     ?>
+
+    <h2 class="judul">Data Diri Dosen</h2>
+    <table>
+        <tr>
+            <th>Kategori</th>
+            <th>Detail</th>
+        </tr>
+        <tr>
+            <td>Nama</td>
+            <td><?php echo $Dosen['nama']; ?></td>
+        </tr>
+        <tr>
+            <td>Domisili</td>
+            <td><?php echo $Dosen['domisili']; ?></td>
+        </tr>
+        <tr>
+            <td>Jenis Kelamin</td>
+            <td><?php echo $Dosen['jenis_kelamin']; ?></td>
+        </tr>
+    </table>
 </body>
 </html>
