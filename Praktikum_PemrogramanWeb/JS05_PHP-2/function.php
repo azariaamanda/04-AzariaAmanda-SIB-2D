@@ -1,7 +1,7 @@
 <?php
 //membuat fungsi
-function perkenalan($nama, $salam){
-    echo $salam."<br/>";
+function perkenalan($nama, $salam="Assalamualaikum"){
+    echo $salam.", ";
     echo "Perkenalkan, nama saya ".$nama."<br/>";
     echo "Senang berkenalan dengan Anda<br/>";
 }
@@ -15,4 +15,4 @@ $saya = "Azaria";
 $sucapanSalam = "Selamat pagi!";
 
 //memanggil lagi
-perkenalan($saya, $sucapanSalam);
+perkenalan($saya);
