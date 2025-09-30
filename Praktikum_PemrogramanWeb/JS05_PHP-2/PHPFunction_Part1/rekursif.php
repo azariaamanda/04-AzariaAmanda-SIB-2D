@@ -6,7 +6,7 @@
 // }
 // tampilkanHaloDunia();
 
-for (si=1; si <= 25; si++){
-    echo "Perulangan ke-{si} <br>";
+for ($i=1; $i <= 25; $i++){
+    echo "Perulangan ke-{$i} <br>";
 }
 ?>
