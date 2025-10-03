@@ -1,5 +1,5 @@
-package testpackage;
-import Percobaan3.Dosen04;
+package Percobaan4;
+
 public class InherintanceDemo04 {
     public static void main(String[] args) {
         Dosen04 dosen1 = new Dosen04();
@@ -9,6 +9,6 @@ public class InherintanceDemo04 {
         dosen1.gaji = 3000000;
         dosen1.nidn = "1989432439";
 
-        System.out.println(dosen1.getInfo());
+        System.out.println(dosen1.getAllInfo());
     }
 }
