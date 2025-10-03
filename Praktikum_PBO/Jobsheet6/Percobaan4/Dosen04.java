@@ -13,7 +13,7 @@ public class Dosen04 extends Pegawai04  {
         info += "NIP         : " + super.nip + "\n";
         info += "Nama        : " + super.nama + "\n";
         info += "Gaji        : " + super.gaji + "\n";
-        info += "NIDN        : " + super.nidn + "\n";
+        info += "NIDN        : " + this.nidn + "\n";
         
         return info;
     }
