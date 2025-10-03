@@ -10,10 +10,10 @@ public class Dosen04 extends Pegawai04  {
 
     public String getAllInfo() {
         String info = "";
-        info += "NIP         : " + this.nip + "\n";
-        info += "Nama        : " + this.nama + "\n";
-        info += "Gaji        : " + this.gaji + "\n";
-        info += "NIDN        : " + this.nidn + "\n";
+        info += "NIP         : " + super.nip + "\n";
+        info += "Nama        : " + super.nama + "\n";
+        info += "Gaji        : " + super.gaji + "\n";
+        info += "NIDN        : " + super.nidn + "\n";
         
         return info;
     }
