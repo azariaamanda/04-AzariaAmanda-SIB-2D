@@ -1,0 +1,40 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: #f4f6f9;
+    padding: 20px;
+}
+
+.judul {
+    text-align: center;
+    color: #333;
+    z-index: 2;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background: #27aeef;
+    color: white;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tr:hover {
+    background: #f1f1f1;
+}
