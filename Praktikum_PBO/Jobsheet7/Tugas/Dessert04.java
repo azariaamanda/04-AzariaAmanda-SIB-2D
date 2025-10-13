@@ -6,10 +6,12 @@ public class Dessert04 {
     public double harga;
     public int jumlahKalori;
 
+    // constructor tanpa parameter
     public Dessert04() {
         System.out.println("Objek dari class Dessert dibuat.");
     }
 
+    // constructor dengan parameter
     public Dessert04(String nama, double harga, int jumlahKalori) {
         this.nama = nama;
         this.harga = harga;
@@ -17,6 +19,7 @@ public class Dessert04 {
         System.out.println("Objek dari class Dessert dibuat dengan parameter.");
     }
 
+    // method getInfo
     public String getInfo() {
         String info = "";
         info += "Nama        : " + nama + "\n";
