@@ -7,7 +7,7 @@ public class TV extends AlatElektronik implements Audible {
         this.jenisLayar = jenisLayar;
         this.volume = volume;
     }
-    
+
     public String getJenisLayar(){
         return jenisLayar;
     }
@@ -36,3 +36,5 @@ public class TV extends AlatElektronik implements Audible {
         return "\nTV " + jenisLayar + super.getInfo() + "\nVolume: " + volume;
     }
 }
+
+
