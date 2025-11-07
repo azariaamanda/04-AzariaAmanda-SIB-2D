@@ -7,21 +7,27 @@ public class TV extends AlatElektronik implements Audible {
         this.jenisLayar = jenisLayar;
         this.volume = volume;
     }
+    
     public String getJenisLayar(){
         return jenisLayar;
     }
+
     public void setJenisLayar(String jenisLayar){
         this.jenisLayar = jenisLayar;
     }
+
     public int getVolume(){
         return volume;
     }
+
     public void setVolume(int volume){
         this.volume = volume;
     }
+
     public void naikkanVolume(int increment){
         volume += increment;
     }
+
     public void turunkanVolume(int decrement){
         volume -= decrement;
     }
