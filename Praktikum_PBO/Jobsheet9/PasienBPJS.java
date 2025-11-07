@@ -16,11 +16,11 @@ public class PasienBPJS extends Pasien implements IRegistrasi {
 
     @Override
     public void daftar() {
-        System.out.println("Pasien BPJS melakukan pendaftaran dengan nomor BPJS: " + noBPJS);
+        System.out.println(getNama() + " melakukan pendaftaran dengan nomor BPJS: " + noBPJS);
     }
 
     @Override
     public void bayarAdministrasi() {
-        System.out.println("Pasien BPJS tidak membayar administrasi karena ditanggung BPJS.");
+        System.out.println(getNama() + " tidak membayar administrasi karena ditanggung BPJS.");
     }
 }
