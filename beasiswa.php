@@ -26,7 +26,6 @@ $result = pg_query($conn, $sql);
 </head>
 <body>
 
-<!--NAVBAR -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm py-2 px-5">
   <div class="container-fluid">
     <a class="navbar-brand d-flex align-items-center gap-2" href="#">
@@ -67,7 +66,6 @@ $result = pg_query($conn, $sql);
   </div>
 </nav>
 
-<!-- HERO -->
 <section class="text-white bg-info py-5 px-5 text-center">
   <div class="container">
     <h1 class="fw-bold mb-3">Beasiswa Dunia</h1>
@@ -75,19 +73,16 @@ $result = pg_query($conn, $sql);
   </div>
 </section>
 
-<!-- CONTENT -->
 <main class="container my-5">
 
-  <!-- Search Bar -->
   <div class="d-flex justify-content-center mb-5">
     <input id="searchBeasiswa" type="text" class="form-control form-control-lg w-75 rounded-3 border-1" placeholder="Cari beasiswa...">
   </div>
 
-  <!-- Scholarship Cards -->
   <div id="beasiswaList" class="d-flex flex-column align-items-center gap-4">
     <?php if (pg_num_rows($result) > 0): ?>
       <?php while ($row = pg_fetch_assoc($result)): ?>
-        <?php 
+        <?php
           $isOpen = strtolower($row['status']) == 'open';
           $status = $isOpen ? '✅ OPEN' : '❌ CLOSE';
           $statusClass = $isOpen
@@ -98,17 +93,14 @@ $result = pg_query($conn, $sql);
         <div class="card w-75 border border-info rounded-4 shadow-sm">
           <div class="card-body p-4 position-relative">
 
-            <!-- Status -->
             <span class="position-absolute top-0 end-0 translate-middle-y me-3 mt-4 border <?= $statusClass ?> fw-bold px-3 py-1 rounded-pill small"><?= $status ?></span>
 
             <div class="row align-items-center g-4">
 
-              <!-- Logo -->
               <div class="col-md-4 text-center">
                 <img src="<?= $row['logo_path'] ?>" class="img-fluid rounded-3 border" alt="<?= $row['nama_beasiswa'] ?>">
               </div>
 
-              <!-- Detail -->
               <div class="col-md-8">
                 <p class="mb-1 text-muted">
                   <img src="Gambar/iconLoc.jpg" width="16" height="16" class="me-1 align-middle">
@@ -149,7 +141,6 @@ $result = pg_query($conn, $sql);
   </div>
 </main>
 
-<!-- FOOTER -->
 <footer class="bg-info text-white text-center py-3 small">
   &copy; 2025 ScholarPath | All Rights Reserved
 </footer>

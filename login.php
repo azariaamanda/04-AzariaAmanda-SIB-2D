@@ -45,6 +45,5 @@ if (isset($_SESSION['user_id'])) {
       </div>
     </form>
   </div>
-
 </body>
 </html>
