@@ -55,9 +55,5 @@ if (isset($_SESSION['user_id'])) {
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<<<<<<< HEAD
-</html>
-=======
 </html>
 
->>>>>>> c4381afb27bfa3334661ba3d367d1340c944192a
