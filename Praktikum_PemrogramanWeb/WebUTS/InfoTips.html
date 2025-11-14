@@ -1,76 +1,116 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <title>Info & Tips | ScholarPath</title>
-    <link rel="stylesheet" href="css/InfoTips.css">
-<body>
-    <header class="navbar">
-        <div class="brand">
-            <img src="Gambar/LogoScolarPathNoBG.png" alt="ScholarPath Logo" style="height:50px;">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Info & Tips | ScholarPath</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light text-dark">
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm py-2 px-5">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <img src="Gambar/LogoScolarPathNoBG.png" alt="ScholarPath" height="50">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-lg-center gap-3">
+        <li class="nav-item"><a class="nav-link text-dark fw-medium" href="index.html">Home</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark fw-medium" href="#" role="button" data-bs-toggle="dropdown">Beasiswa</a>
+          <ul class="dropdown-menu shadow">
+            <li><a class="dropdown-item" href="beasiswa-asia.html">Beasiswa Asia</a></li>
+            <li><a class="dropdown-item" href="beasiswa-luarasia.html">Beasiswa Luar Asia</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark fw-medium" href="#" role="button" data-bs-toggle="dropdown">Universitas</a>
+          <ul class="dropdown-menu shadow">
+            <li><a class="dropdown-item" href="kampus-asia.html">Universitas Asia</a></li>
+            <li><a class="dropdown-item" href="kampus-dunia.html">Universitas Dunia</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link text-dark fw-medium" href="InfoTips.html">Info & Tips</a></li>
+
+        <li class="nav-item">
+          <a href="logout.php" class="btn btn-outline-danger rounded-pill px-4 fw-semibold">Admin</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="container text-center py-5">
+  <h1 class="fw-bold mb-2">Info & Tips</h1>
+  <p class="text-secondary mb-5">Berita terbaru & artikel panduan untuk membantu perjalanan akademik Anda</p>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">
+            <a class="text-dark text-decoration-none" data-bs-toggle="collapse" href="#card1" role="button" aria-expanded="false" aria-controls="card1">
+              Hubungkan Hobimu dengan Jurusan Kuliah di Luar Negeri
+            </a>
+          </h5>
+          <div class="collapse mt-3" id="card1">
+            <p class="card-text">Pelajari bagaimana hobi dapat membantu menentukan jurusan kuliah terbaik di luar negeri.</p>
+            <a href="#" class="link-info fw-semibold">Lihat Selengkapnya</a>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <nav>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
 
-            <li>
-                <details class="dropdown">
-                <summary>Beasiswa</summary>
-                <div class="dropdown-menu">
-                    <a href="beasiswa-asia.html">Beasiswa Asia</a>
-                    <a href="beasiswa-luarasia.html">Beasiswa Luar Asia</a>
-                </div>
-                </details>
-            </li>
-
-            <li>
-                <details class="dropdown">
-                <summary>Universitas</summary>
-                <div class="dropdown-menu">
-                    <a href="kampus-asia.html">Universitas Asia</a>
-                    <a href="kampus-dunia.html">Universitas Dunia</a>
-                </div>
-                </details>
-            </li>
-
-            <li><a href="InfoTips.html">Info & Tips</a></li>
-        </ul>
-        </nav>
-    </header>
-
-    <section class="info-tips">
-        <h1>Info & Tips</h1>
-        <p>Berita terbaru & artikel panduan untuk membantu perjalanan akademik Anda</p>
-
-        <div class="tips-container">
-        <div class="tip-card">
-            <div class="tip-content">
-            <h3>Hubungkan Hobimu dengan Jurusan Kuliah di Luar Negeri: Panduan untuk Pilihan Tepat</h3>
-            <p>Temukan bagaimana hobimu bisa memandu pilihan jurusan kuliah di luar negeri. Pelajari cara menghubungkan minat pribadi dengan karir masa depan.</p>
-            <a href="https://www.hotcourses.co.id/study-abroad-info/subject-info/hubungkan-hobimu-dengan-jurusan-kuliah-di-luar-negeri/" target="_blank" class="read-more">Lihat Selengkapnya</a>
-            </div>
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">
+            <a class="text-dark text-decoration-none" data-bs-toggle="collapse" href="#card2" role="button" aria-expanded="false" aria-controls="card2">
+              Beasiswa S1 Luar Negeri Fully Funded 2025–2026
+            </a>
+          </h5>
+          <div class="collapse mt-3" id="card2">
+            <p class="card-text">Informasi lengkap tentang beasiswa S1 luar negeri yang mencakup biaya kuliah, akomodasi, dan uang saku.</p>
+            <a href="#" class="link-info fw-semibold">Lihat Selengkapnya</a>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div class="tip-card">
-            <div class="tip-content">
-            <h3>Beasiswa S1 Luar Negeri Fully Funded 2025–2026 dari Universitas Terkenal Di Dunia</h3>
-            <p>Ingin tahu universitas luar negeri mana saja yang memberikan kesempatan beasiswa S1 fully funded untuk mahasiswa dari Indonesia? Yuk simak di artikel ini!</p>
-            <a href="https://www.hotcourses.co.id/study-abroad-info/student-finance/beasiswa-s1-fully-funded-dari-universitas-luar-negeri/" target="_blank" class="read-more">Lihat Selengkapnya</a>
-            </div>
-        </div>
 
-        <div class="tip-card">
-            <div class="tip-content">
-            <h3>Panduan Lengkap Mendapatkan Beasiswa Fully Funded di Luar Negeri</h3>
-            <p>Temukan daftar beasiswa fully funded S1, S2 dan S3 luar negeri tahun 2024-2025. Dapatkan informasi lengkap, syarat, dan cara mendaftar untuk kuliah gratis di universitas top dunia.</p>
-            <a href="https://www.hotcourses.co.id/study-abroad-info/student-finance/panduan-beasiswa-fully-funded-s1-s2-s3/" target="_blank" class="read-more">Lihat Selengkapnya</a>
-            </div>
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">
+            <a class="text-dark text-decoration-none" data-bs-toggle="collapse" href="#card3" role="button" aria-expanded="false" aria-controls="card3">
+              Panduan Lengkap Mendapatkan Beasiswa Fully Funded
+            </a>
+          </h5>
+          <div class="collapse mt-3" id="card3">
+            <p class="card-text">Temukan daftar beasiswa fully funded S1, S2 dan S3 luar negeri tahun 2024–2025, syarat, dan cara daftar.</p>
+            <a href="#" class="link-info fw-semibold">Lihat Selengkapnya</a>
+          </div>
         </div>
-        </div>
-    </section>
+      </div>
+    </div>
 
-    <footer class="site-footer">
-        <p>&copy 2025 ScholarPath | All Rights Reserved</p>
-    </footer>
+  </div>
+</section>
+
+<footer class="bg-info text-light text-center py-2 fixed-bottom small">
+  &copy; 2025 ScholarPath | All Rights Reserved
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

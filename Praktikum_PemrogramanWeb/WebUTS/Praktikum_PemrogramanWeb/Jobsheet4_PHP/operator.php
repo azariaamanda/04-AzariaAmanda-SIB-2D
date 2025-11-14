@@ -1,0 +1,80 @@
+<?php
+$a = 10;
+$b = 5;
+
+echo "Variabel a: {$a} <br>";
+echo "Variabel b: {$b} <br>";
+
+$hasilTambah = $a + $b;
+$hasilKurang = $a - $b;
+$hasilKali = $a * $b;
+$hasilBagi = $a / $b;
+$sisaBagi = $a % $b;
+$pangkat = $a ** $b;
+
+echo "Hasil Tambah: {$hasilTambah} <br>";
+echo "Hasil Kurang: {$hasilKurang} <br>";
+echo "Hasil Kali: {$hasilKali} <br>";
+echo "Hasil Bagi: {$hasilBagi} <br>";
+echo "Sisa Bagi: {$sisaBagi} <br>";
+echo "Pangkat: {$pangkat} <br>";
+
+$hasilSama = $a == $b;
+$hasilTidakSama = $a != $b;
+$hasilLebihKecil = $a < $b;
+$hasilLebihBesar = $a > $b;
+$hasilLebihKecilSama = $a <= $b;
+$hasilLebihBesarSama = $a >= $b;
+
+echo "<br>";
+echo "Hasil Sama: {$hasilSama} <br>";
+echo "Hasil Tidak Sama: {$hasilTidakSama} <br>";
+echo "Hasil Lebih Kecil: {$hasilLebihKecil} <br>";
+echo "Hasil Lebih Besar: {$hasilLebihBesar} <br>";
+echo "Hasil Lebih Kecil Sama: {$hasilLebihKecilSama} <br>";
+echo "Hasil Lebih Besar Sama: {$hasilLebihBesarSama} <br>";
+
+$hasilAnd = $a && $b;
+$hasilOr = $a || $b;
+$hasilNotA = !$a;
+$hasilNotB = !$b;
+
+echo "<br>";
+echo "Hasil AND: {$hasilAnd} <br>";
+echo "Hasil OR: {$hasilOr} <br>";
+echo "Hasil NOT A: {$hasilNotA} <br>";
+echo "Hasil NOT B: {$hasilNotB} <br>";
+
+echo "<br>";
+echo "Nilai a: {$a} <br>";
+echo "Nilai b: {$b} <br><br>";
+
+$a += $b;
+echo "Setelah a += b, nilai a: $a <br>";
+$a -= $b;
+echo "Setelah a -= b, nilai a: $a <br>";
+$a *= $b;
+echo "Setelah a *= b, nilai a: $a <br>";
+$a /= $b;
+echo "Setelah a /= b, nilai a: $a <br>";
+$a %= $b;
+echo "Setelah a %= b, nilai a: $a <br><br>";
+
+$hasilIdentik = $a === $b;
+$hasilTidakIdentik = $a !== $b;
+
+echo "Nilai a: {$a} <br>";
+echo "Nilai b: {$b} <br><br>";
+
+echo "Apakah a identik dengan b (===)? " . ($hasilIdentik ? 'true' : 'false') . "<br>";
+echo "Apakah a tidak identik dengan b (!==)? " . ($hasilTidakIdentik ? 'true' : 'false') . "<br><br>";
+
+$totalKursi = 45;
+$kursiTerisi = 28;
+
+$persenKursiKosong = (45-28)/45 * 100;
+
+echo"Total Kursi Resto = $totalKursi<br>";
+echo"Kursi yang terisi pada suatu malam = $kursiTerisi<br>";
+echo"Persen Kursi yang masih kosong $persenKursiKosong";
+?>
