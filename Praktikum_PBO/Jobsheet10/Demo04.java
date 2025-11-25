@@ -9,7 +9,12 @@ public class Demo04 {
     }
 
     public static void train(Pegawai04 pegawai){
-        System.out.println("Memberikan pelatihan untuk pegawai");
         pegawai.displayInfo();
+        System.out.println("Mengenalkan lingkungan kampus");
+        System.out.println("Menginfokan SOP/Juknis");
+
+        System.out.println(pegawai.nidn);
+        System.out.println(pegawai.kategori);
+        pegawai.mengajar();
     }
 }
