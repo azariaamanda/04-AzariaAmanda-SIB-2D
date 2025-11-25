@@ -1,19 +1,15 @@
-
-
 public class Demo04 {
     public static void main(String[] args) {
         Dosen04 dosen1 = new Dosen04("19940201", "Widia, S.Kom. M.Kom", "199402");
+        TenagaKependidikan04 tendik1 = new TenagaKependidikan04("19750301", "Aida, A.Md", "Tenaga Administrasi");
 
-        Pegawai04 pegawai1 = dosen1;
+        train(dosen1);
+        train(tendik1);
 
-        System.out.println(pegawai1.nip);
-        System.out.println(pegawai1.nama);
-        pegawai1.displayInfo();
+    }
 
-        Dosen04 newDosen = (Dosen04) pegawai1;
-        System.out.println(newDosen.nama);
-        System.out.println(newDosen.nidn);
-        newDosen.mengajar();
-
+    public static void train(Pegawai04 pegawai){
+        System.out.println("Memberikan pelatihan untuk pegawai");
+        pegawai.displayInfo();
     }
 }
