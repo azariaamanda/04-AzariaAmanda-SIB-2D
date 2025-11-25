@@ -10,5 +10,7 @@ public class Demo04 {
         System.out.println(pegawai1.nama);
         pegawai1.displayInfo();
 
+        TenagaKependidikan04 test = (TenagaKependidikan04) pegawai1;
+
     }
 }
