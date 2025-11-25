@@ -15,3 +15,4 @@ public class TenagaKependidikan04 extends Pegawai04 {
         System.out.println("Kategori: " + kategori);
     }
 }
+
