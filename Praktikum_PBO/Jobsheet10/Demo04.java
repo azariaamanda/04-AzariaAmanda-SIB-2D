@@ -13,8 +13,8 @@ public class Demo04 {
         System.out.println("Mengenalkan lingkungan kampus");
         System.out.println("Menginfokan SOP/Juknis");
 
-        System.out.println(pegawai.nidn);
-        System.out.println(pegawai.kategori);
-        pegawai.mengajar();
+        if(pegawai instanceof Dosen04){
+            System.out.println("Memberikan pelatihan padagodik");
+        }
     }
 }
